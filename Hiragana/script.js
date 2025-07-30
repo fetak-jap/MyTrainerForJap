@@ -91,10 +91,13 @@ function checkAnswer() {
 // Kliknutí na tlačítko "Zkontrolovat"
 document.getElementById("check-btn").addEventListener("click", checkAnswer);
 
-// Stisknutí Enteru v inputu
 document.getElementById("user-input").addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-        checkAnswer();
+        if (!currentKana) {
+            document.getElementById("next-btn").click();
+        } else {
+            checkAnswer();
+        }
     }
 });
 
@@ -106,4 +109,6 @@ document.getElementById("next-btn").addEventListener("click", () => {
     document.getElementById("hint").innerText = "";
     document.getElementById("user-input").value = "";
     attempts = 0;
+    document.getElementById("user-input").focus();
 });
+
