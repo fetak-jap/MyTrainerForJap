@@ -29,6 +29,27 @@ const kanaList = [
     { kana: "ふ", romaji: "fu", hint: "mouth blowing wind: Fuuuu " },
     { kana: "へ", romaji: "he", hint: "big arrow pointing up HEre " },
     { kana: "ほ", romaji: "ho", hint: "inverted look like a HO " },
+
+    { kana: "ま", romaji: "ma", hint: "you can see the small circle below like a small a and if its rotated 90 degrees you can se M" },
+    { kana: "み", romaji: "mi", hint: "hunting meat (mi) with a bow and arrow" },
+    { kana: "む", romaji: "mu", hint: "looks like a cow's face or nose (moo)" },
+    { kana: "め", romaji: "me", hint: "raMEn" },
+    { kana: "も", romaji: "mo", hint: "looks like a proper fishing hook you'll get more fishes" },
+    { kana: "や", romaji: "ya", hint: "i love ya" },
+    { kana: "ゆ", romaji: "yu", hint: "looks like a U-turn" },
+    { kana: "よ", romaji: "yo", hint: "looks like a yoga pose" },
+    { kana: "ら", romaji: "ra", hint: "looks like a rabbit's head" },
+    { kana: "り", romaji: "ri", hint: "Rounder い " },
+    { kana: "る", romaji: "ru", hint: "looks like a loop (ru)" },
+    { kana: "れ", romaji: "re", hint: "looks like a R with Extra details" },
+    { kana: "ろ", romaji: "ro", hint: "a road" },
+    { kana: "わ", romaji: "wa", hint: "warios big ass" },
+    { kana: "を", romaji: "wo", hint: "stickman sitting on a worm (wo)" },
+    { kana: "ん", romaji: "n", hint: "looks like an 'n' with a tail and lowercase" },
+    { kana: "が", romaji: "ga", hint: "ka with two dots (ga)" },
+    { kana: "ぎ", romaji: "gi", hint: "ki with two dots (gi)" },
+    { kana: "ぐ", romaji: "gu", hint: "ku with two dots (gu)" },
+    { kana: "げ", romaji: "ge", hint: "ke with two dots (ge)" }
 ];
 
 let currentKana = null;
