@@ -3,20 +3,26 @@ html, body {
     margin: 0;
 }
 
-body{
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../../images/japan.avif') no-repeat center center/cover;
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/japan.avif') no-repeat center center/cover;
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
+    position: relative;
 }
 
-.container {
+/* New wrapper to center both header and nav */
+.center-wrapper {
     display: flex;
-    justify-content: center; /* centers content horizontally */
-    align-items: center;     /* centers content vertically */
-    min-height: 100vh;       /* ensures full viewport height */
-    margin: 0;
+    flex-direction: column; /* stack header and nav vertically */
+    justify-content: center; /* center vertically */
+    align-items: center;     /* center horizontally */
+    height: 100vh;
+    gap: 40px; /* spacing between header and nav */
 }
+
+/* Remove or modify your .container styles */
+/* You can remove the container class or repurpose if needed */
 
 nav ul {
     display: flex;
@@ -28,37 +34,44 @@ nav ul {
 
 nav ul li {
     margin: 10px 0;
-    
 }
+
 nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 36px;
-    
 }
 
 nav ul li a:hover {
     color: #4CAF50;
 }
+
 nav ul li a:active {
     color: #005f73;
 }
 
-.back-link{
+.back-link {
     text-decoration: none;
     color: white;
-    
     padding: 6px;
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 24px;
+    font-size: 36px;
 }
-.back-link:hover{
+
+.back-link:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
-.back-link:active{
+
+.back-link:active {
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+header {
+    text-align: center;
+    color: white;
+    font-size: 36px;
 }
