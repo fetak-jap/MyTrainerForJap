@@ -27,9 +27,20 @@ const kanaList = [
     { kana: "ぜ", romaji: "ze", hint: "se with two dots" },
     { kana: "ぞ", romaji: "zo", hint: "so with two dots" },
     { kana: "だ", romaji: "da", hint: "ta with two dots" },
-    { kana: "ぢ", romaji: "ji", hint: "chi with two dots" },
-    { kana: "づ", romaji: "zu", hint: "tsu with two dots" },
+    { kana: "ぢ", romaji: "ji", hint: "chi with two dots"},
+    { kana: "づ", romaji: "zu", hint: "tsu with two dots"},
     { kana: "で", romaji: "de", hint: "te with two dots" },
+    { kana: "ど", romaji: "do", hint: "to with two dots" },
+    { kana: "ば", romaji: "ba", hint: "ha with two dots" },
+    { kana: "び", romaji: "bi", hint: "hi with two dots" },
+    { kana: "ぶ", romaji: "bu", hint: "hu with two dots" },
+    { kana: "べ", romaji: "be", hint: "he with two dots" },
+    { kana: "ぼ", romaji: "bo", hint: "ho with two dots" },
+    { kana: "ぱ", romaji: "pa", hint: "ha with a circle" },
+    { kana: "ぴ", romaji: "pi", hint: "hi with a circle" },
+    { kana: "ぷ", romaji: "pu", hint: "hu with a circle" },
+    { kana: "ぺ", romaji: "pe", hint: "he with a circle" },
+    { kana: "ぽ", romaji: "po", hint: "ho with a circle" },
     
 
 ];
