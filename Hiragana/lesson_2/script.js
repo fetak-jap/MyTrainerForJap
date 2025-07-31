@@ -15,10 +15,23 @@ const kanaList = [
     { kana: "わ", romaji: "wa", hint: "warios big ass" },
     { kana: "を", romaji: "wo", hint: "stickman sitting on a worm (wo)" },
     { kana: "ん", romaji: "n", hint: "looks like an 'n' with a tail and lowercase" },
-    { kana: "が", romaji: "ga", hint: "ka with two dots (ga)" },
-    { kana: "ぎ", romaji: "gi", hint: "ki with two dots (gi)" },
-    { kana: "ぐ", romaji: "gu", hint: "ku with two dots (gu)" },
-    { kana: "げ", romaji: "ge", hint: "ke with two dots (ge)" }
+    { kana: "が", romaji: "ga", hint: "ka with two dots" },
+    { kana: "ぎ", romaji: "gi", hint: "ki with two dots" },
+    { kana: "ぐ", romaji: "gu", hint: "ku with two dots" },
+    { kana: "げ", romaji: "ge", hint: "ke with two dots" },
+
+    { kana: "ご", romaji: "go", hint: "ko with two dots" },
+    { kana: "ざ", romaji: "za", hint: "sa with two dots" },
+    { kana: "じ", romaji: "ji", hint: "shi with two dots" },
+    { kana: "ず", romaji: "zu", hint: "su with two dots" },
+    { kana: "ぜ", romaji: "ze", hint: "se with two dots" },
+    { kana: "ぞ", romaji: "zo", hint: "so with two dots" },
+    { kana: "だ", romaji: "da", hint: "ta with two dots" },
+    { kana: "ぢ", romaji: "ji", hint: "chi with two dots" },
+    { kana: "づ", romaji: "zu", hint: "tsu with two dots" },
+    { kana: "で", romaji: "de", hint: "te with two dots" },
+    
+
 ];
 
 let currentKana = null;
