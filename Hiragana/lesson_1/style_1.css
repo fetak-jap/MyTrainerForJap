@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/japan.avif') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../../images/japan.avif') no-repeat center center/cover;
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
