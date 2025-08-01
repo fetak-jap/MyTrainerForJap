@@ -52,6 +52,11 @@ function checkAnswer() {
         resultText.textContent = "✅ Správně! Good boy!";
         resultText.style.color = "lightgreen";
         hintText.innerText = currentKana.hint;
+
+        setTimeout(() => {
+            document.getElementById("next-btn").click();
+        }, 1000); 
+
     } else {
         attempts++;
 
