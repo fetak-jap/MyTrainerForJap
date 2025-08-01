@@ -73,13 +73,27 @@ const kanaList = [
     { kana: "ぽ", romaji: "po", hint: "ho with a circle" },
 ];
 
+
 let currentKana = null;
 let attempts = 0;
 
-function getRandomKana() {
-    const randomIndex = Math.floor(Math.random() * kanaList.length);
-    return kanaList[randomIndex];
+let shuffledKanaList = [];
+let kanaIndex = 0;
+
+function shuffleKanaList() {
+    shuffledKanaList = [...kanaList].sort(() => Math.random() - 0.5);
+    kanaIndex = 0;
 }
+
+function getRandomKana() {
+    if (shuffledKanaList.length === 0 || kanaIndex >= shuffledKanaList.length) {
+        shuffleKanaList();
+    }
+    return shuffledKanaList[kanaIndex++];
+}
+
+
+
 
 function checkAnswer() {
     const userInput = document.getElementById("user-input").value.trim().toLowerCase();
@@ -96,9 +110,10 @@ function checkAnswer() {
         resultText.style.color = "lightgreen";
         hintText.innerText = currentKana.hint;
 
+                
         setTimeout(() => {
             document.getElementById("next-btn").click();
-        }, 1000); 
+        }, 1500); 
 
     } else {
         attempts++;
@@ -136,5 +151,7 @@ document.getElementById("next-btn").addEventListener("click", () => {
     document.getElementById("user-input").value = "";
     attempts = 0;
     document.getElementById("user-input").focus();
-});
 
+    document.getElementById("remaining-count").textContent =
+    `Zbývá: ${shuffledKanaList.length - kanaIndex}`;
+});

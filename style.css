@@ -62,5 +62,17 @@ nav ul li a:hover{
     padding: 20px;
 }
 
-
+.obrazky1, .obrazky2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff7;
+  
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 0 8px #0003;
+}
 
