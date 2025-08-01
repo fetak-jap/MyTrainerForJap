@@ -153,5 +153,5 @@ document.getElementById("next-btn").addEventListener("click", () => {
     document.getElementById("user-input").focus();
 
     document.getElementById("remaining-count").textContent =
-    `Zbývá: ${shuffledKanaList.length - kanaIndex}`;
+    `Remaining: ${shuffledKanaList.length - kanaIndex}`;
 });
