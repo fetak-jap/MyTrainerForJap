@@ -14,11 +14,12 @@ body {
 /* New wrapper to center both header and nav */
 .center-wrapper {
     display: flex;
-    flex-direction: column; /* stack header and nav vertically */
-    justify-content: center; /* center vertically */
-    align-items: center;     /* center horizontally */
+    flex-direction: column;
+    justify-content: flex-start; /* místo center */
+    align-items: center;
     height: 100vh;
-    gap: 40px; /* spacing between header and nav */
+    gap: 0px;
+    
 }
 
 /* Remove or modify your .container styles */
@@ -74,6 +75,8 @@ header {
     text-align: center;
     color: white;
     font-size: 36px;
+    margin-top: -20px; /* nebo třeba -40px */
+    
 }
 
 .kana-list-link {
@@ -89,8 +92,19 @@ header {
     color: #005f73;
 }
 .kana-list{
-    margin: 0;
+    margin-top: 50px;
     padding: 0;
     font-size: 24px;
     color: wheat;
+    margin-bottom: 70px;
+
+}
+.kana-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px; /* menší mezera mezi těmito dvěma linky */
+}   
+.lesson-container {
+    text-align: center;
 }
