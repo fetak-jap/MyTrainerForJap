@@ -33,7 +33,7 @@ body{
 .kana-list{
 
     padding: 20px;
-    
+    padding-top: 50px;
     max-width: 1450px;
     margin: 0 auto;
     color: white;
@@ -54,7 +54,8 @@ header {
 }
 .romaji-1letter{
     font-size: 24px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
+    margin-left: 20px;
 }
 .romaji-wANDy{
     font-size: 24px;
