@@ -25,7 +25,6 @@ const kanaList = [
     { kana: "ヌ", romaji: "nu", hint: "Number 7" },
     { kana: "ネ", romaji: "ne", hint: "Necktie" },
     { kana: "ノ", romaji: "no", hint: "No it look like a no" },
-    
     { kana: "ハ", romaji: "ha", hint: "Two hands clapping "},
     { kana: "ヒ", romaji: "hi", hint: "Sitting person waving his hand and saying HI. "},
     { kana: "フ", romaji: "fu", hint: "Mt FUji "},
@@ -46,7 +45,7 @@ const kanaList = [
     { kana: "ロ", romaji: "ro", hint: "Robot's head "},
     { kana: "ワ", romaji: "wa", hint: "Faucet for WAter "},
     { kana: "ヲ", romaji: "wo", hint: "Upside down W - WOah"},
-    { kana: "ン", romaji: "n", hint: "Nose - N" },
+    { kana: "ン", romaji: "n", hint: "A man about to take a Nap" },
 ];
 
 let currentKana = null;
