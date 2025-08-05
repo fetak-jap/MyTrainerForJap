@@ -1,32 +1,17 @@
 const kanaList = [
-{ kana: "ガ", romaji: "ga", hint: "カ with two dots" },
-{ kana: "ギ", romaji: "gi", hint: "キ with two dots" },
-{ kana: "グ", romaji: "gu", hint: "ク with two dots" },
-{ kana: "ゲ", romaji: "ge", hint: "ケ with two dots" },
-{ kana: "ゴ", romaji: "go", hint: "コ with two dots" },
-{ kana: "ザ", romaji: "za", hint: "サ with two dots" },
-{ kana: "ジ", romaji: "ji", hint: "シ with two dots" },
-{ kana: "ズ", romaji: "zu", hint: "ス with two dots" },
-{ kana: "ゼ", romaji: "ze", hint: "セ with two dots" },
-{ kana: "ゾ", romaji: "zo", hint: "ソ with two dots" },
-{ kana: "ダ", romaji: "da", hint: "タ with two dots" },
-{ kana: "ヂ", romaji: "ji", hint: "チ with two dots" },
-{ kana: "ヅ", romaji: "zu", hint: "ツ with two dots" },
-{ kana: "デ", romaji: "de", hint: "テ with two dots" },
-{ kana: "ド", romaji: "do", hint: "ト with two dots" },
-{ kana: "バ", romaji: "ba", hint: "ハ with two dots" },
-{ kana: "ビ", romaji: "bi", hint: "ヒ with two dots" },
-{ kana: "ブ", romaji: "bu", hint: "フ with two dots" },
-{ kana: "ベ", romaji: "be", hint: "ヘ with two dots" },
-{ kana: "ボ", romaji: "bo", hint: "ホ with two dots" },
-{ kana: "パ", romaji: "pa", hint: "ハ with a circle" },
-{ kana: "ピ", romaji: "pi", hint: "ヒ with a circle" },
-{ kana: "プ", romaji: "pu", hint: "フ with a circle" },
-{ kana: "ペ", romaji: "pe", hint: "ヘ with a circle" },
-{ kana: "ポ", romaji: "po", hint: "ホ with a circle" },
-
+    { kana: "ギャ", romaji: "gya", hint: "gi + ya" },
+    { kana: "ギュ", romaji: "gyu", hint: "gi + yu" },
+    { kana: "ギョ", romaji: "gyo", hint: "gi + yo" },
+    { kana: "ジャ", romaji: "ja", hint: "ji + ya" },
+    { kana: "ジュ", romaji: "ju", hint: "ji + yu" },
+    { kana: "ジョ", romaji: "jo", hint: "ji + yo" },
+    { kana: "ビャ", romaji: "bya", hint: "bi + ya" },
+    { kana: "ビュ", romaji: "byu", hint: "bi + yu" },
+    { kana: "ビョ", romaji: "byo", hint: "bi + yo" },
+    { kana: "ピャ", romaji: "pya", hint: "pi + ya" },
+    { kana: "ピュ", romaji: "pyu", hint: "pi + yu" },
+    { kana: "ピョ", romaji: "pyo", hint: "pi + yo" },
 ];
-
 
 let currentKana = null;
 let attempts = 0;
@@ -109,3 +94,5 @@ document.getElementById("next-btn").addEventListener("click", () => {
     document.getElementById("remaining-count").textContent =
     `Remaining: ${shuffledKanaList.length - kanaIndex}`;
 });
+
+
