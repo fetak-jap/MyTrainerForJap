@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_1.css">
+    <link rel="icon" type="image/png" href="../images/hiragna.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. lesson</title>
+
+
+</head>
+<body>
+    <a class="back-link" href="../lesson_page_hiragana.html"> ← Return </a>
+    <div class="container" >
+        <h2 style="color: rgb(255, 255, 255);">You are in the 4. lesson</h2>
+        <h1 id="kana-char" > Press Enter to start </h1>
+
+        <input type="text" id="user-input" placeholder="Type with Romaji" autocomplete="off">
+        <button id="check-btn">Check</button>
+        <p id="result-text"></p>
+        <p id="hint"></p>
+        <button id="next-btn">Next Character</button>
+        <div id="remaining-count" style="font-size: 15px; color: rgb(255, 255, 255); margin-top: 10px;"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script> document.getElementById("user-input").focus(); </script>
+</body>
+</html>
