@@ -2,9 +2,9 @@ const kanaList = [
     { kanji: "学", japanese: "がく", hint: "ga + ku" },
     
     { kanji: "生", japanese: "せい", hint: "life, student" },
-    { kanji: "日", japanese: "に / び", hint: "sun, day" },
+    { kanji: "日", japanese: "に/び", hint: "sun, day" },
     { kanji: "本", japanese: "ほん", hint: "origin, book" },
-    { kanji: "人", japanese: "じん / ひと", hint: "person" },
+    { kanji: "人", japanese: "じん/ひと", hint: "person" },
     { kanji: "医", japanese: "い", hint: "medicine (start of doctor)" },
     { kanji: "者", japanese: "しゃ", hint: "person (suffix, like doctor)" },
     { kanji: "忙", japanese: "いそが", hint: "busy (part of isogashii)" },
@@ -16,7 +16,7 @@ const kanaList = [
     { kanji: "寿", japanese: "す", hint: "longevity (used in sushi)" },
     { kanji: "司", japanese: "し", hint: "administer (used in sushi)" },
     { kanji: "美", japanese: "び", hint: "beautiful (used in oishii)" },
-    { kanji: "味", japanese: "あじ / み", hint: "taste (used in oishii)" },
+    { kanji: "味", japanese: "あじ/み", hint: "taste (used in oishii)" },
     { kanji: "今", japanese: "いま", hint: "now (used in today)" },
     { kanji: "明", japanese: "あ", hint: "bright (used in ashita)" },
     { kanji: "土", japanese: "ど", hint: "earth, Saturday" },
@@ -61,25 +61,29 @@ function checkAnswer() {
         return;
     }
 
-    if (userInput === currentKana.japanese) {
+    // Split possible correct answers by comma and trim them
+    const acceptedAnswers = currentKana.translate
+        .toLowerCase()
+        .split("/")
+        .map(ans => ans.trim());
+
+    if (acceptedAnswers.includes(userInput)) {
         resultText.textContent = "✅ Správně! Good boy!";
         resultText.style.color = "lightgreen";
         hintText.innerText = currentKana.hint;
 
-                
         setTimeout(() => {
             document.getElementById("next-btn").click();
-        }, 1500); 
-
+        }, 1500);
     } else {
         attempts++;
 
         if (attempts === 1) {
             resultText.textContent = "❌ Špatně. Zkus znovu.";
             resultText.style.color = "orange";
-            hintText.innerText = currentKana.hint;  // ← zobrazit hint už po první chybě
+            hintText.innerText = currentKana.hint;
         } else {
-            resultText.textContent = `❌ Špatně. Správně bylo: "${currentKana.japanese}"`;
+            resultText.textContent = `❌ Špatně. Správně bylo: "${currentKana.translate}"`;
             resultText.style.color = "red";
         }
     }
