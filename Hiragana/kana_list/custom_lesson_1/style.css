@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../../images/japan.avif') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../../../images/japan.avif') no-repeat center center/cover;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -68,4 +68,13 @@ header {
     text-decoration: none;
     border-radius: 5px;
     font-size: 24px;
+}
+
+.kana:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+}
+.kana:active {
+    background-color: rgba(255, 255, 255, 0.3);
 }
