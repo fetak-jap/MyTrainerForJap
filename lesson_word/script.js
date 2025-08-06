@@ -53,23 +53,27 @@ function checkAnswer() {
         return;
     }
 
-    if (userInput === currentKana.translate) {
+    // Split possible correct answers by comma and trim them
+    const acceptedAnswers = currentKana.translate
+        .toLowerCase()
+        .split(",")
+        .map(ans => ans.trim());
+
+    if (acceptedAnswers.includes(userInput)) {
         resultText.textContent = "✅ Správně! Good boy!";
         resultText.style.color = "lightgreen";
         hintText.innerText = currentKana.hint;
 
-                
         setTimeout(() => {
             document.getElementById("next-btn").click();
-        }, 1500); 
-
+        }, 1500);
     } else {
         attempts++;
 
         if (attempts === 1) {
             resultText.textContent = "❌ Špatně. Zkus znovu.";
             resultText.style.color = "orange";
-            hintText.innerText = currentKana.hint;  // ← zobrazit hint už po první chybě
+            hintText.innerText = currentKana.hint;
         } else {
             resultText.textContent = `❌ Špatně. Správně bylo: "${currentKana.translate}"`;
             resultText.style.color = "red";
