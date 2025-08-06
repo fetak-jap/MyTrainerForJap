@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../../images/japan.avif') no-repeat center center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.back-link {
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 36px;
+}
+
+.back-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.back-link:active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.kana-list{
+
+    padding: 20px;
+    
+    max-width: 1450px;
+    margin: 0 auto;
+    color: white;
+    font-size: 42px;
+}
+header {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 36px;
+}
+.kana{
+    text-align: center;
+}
+.kana2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.customlesson{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 24px;
+}
