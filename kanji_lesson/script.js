@@ -82,7 +82,7 @@ function checkAnswer() {
             resultText.style.color = "orange";
             hintText.innerText = currentKana.hint;
         } else {
-            resultText.textContent = `❌ Špatně. Správně bylo: "${currentKana.translate}"`;
+            resultText.textContent = `❌ Špatně. Správně bylo: "${currentKana.japanese}"`;
             resultText.style.color = "red";
         }
     }
