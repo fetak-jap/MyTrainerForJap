@@ -1,5 +1,6 @@
 const kanaList = [
-    { kanji: "学", japanese: "がく", hint: "ga + he" },
+    { kanji: "学", japanese: "がく", hint: "ga + ku" },
+    
     { kanji: "生", japanese: "せい", hint: "life, student" },
     { kanji: "日", japanese: "に / び", hint: "sun, day" },
     { kanji: "本", japanese: "ほん", hint: "origin, book" },

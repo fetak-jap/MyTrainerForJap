@@ -126,7 +126,7 @@ nav ul li a:hover {
     padding: 1.5vh 4vw;
     margin: 3vh 0;
     box-shadow: 0 4px 12px rgba(255, 214, 0, 0.12);
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
     cursor: pointer;
     text-decoration: none;
