@@ -189,15 +189,14 @@ nav ul li a:hover {
 
 .lesson-word-button1:hover {
     background-color: #ffffff;
-    color: #333333; /* dark text for good contrast */
+    color: #333333; 
     transform: translateY(-2px) scale(1.05);
 }
 
 .lesson-word-button1:focus {
-  outline: 2px solid #b22234;
-  outline-offset: 2px;
+  outline: 2px solid #000000;
+  box-shadow: 0 0 0 4px #fff; 
 }
-
 
 
 
