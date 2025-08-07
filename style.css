@@ -155,33 +155,55 @@ nav ul li a:hover {
 }
 
 .lesson-word-button {
-    background: linear-gradient(180deg, #FFDF6B 10%, #FFD600 90%);
-    color: #333;
-    font-weight: 600;
-    border: none;
-    border-radius: 50vw;
-    padding: 1.5vh 4vw;
- 
-    margin: 3vh 0;
-    box-shadow: 0 4px 12px rgba(255, 214, 0, 0.12);
-    font-size: 1.5vw;
-    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
-    cursor: pointer;
-    text-decoration: none;
+  color: #b22234;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s, transform 0.1s;
 }
 
 .lesson-word-button:hover {
-    background: linear-gradient(90deg, #FFD600 20%, #FFB300 80%);
-    box-shadow: 0 8px 24px rgba(255, 214, 0, 0.22);
-    transform: scale(1.03);
+    background-color: #fdeaea;
+    transform: translateY(-2px) scale(1.05);
 }
+
+.lesson-word-button:focus {
+  outline: 2px solid #b22234;
+  outline-offset: 2px;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.lesson-word-button1 {
+  color: #FFDF6B;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s, transform 0.1s;
+}
+
+.lesson-word-button1:hover {
+    background-color: #ffffff;
+    color: #333333; /* dark text for good contrast */
+    transform: translateY(-2px) scale(1.05);
+}
+
+.lesson-word-button1:focus {
+  outline: 2px solid #b22234;
+  outline-offset: 2px;
+}
+
+
+
+
 .word-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* ✅ zarovná text i tlačítko na střed */
-  flex-wrap: wrap;
-  gap: 2vw;
-  margin: 4vh 0;
+    text-align: center;
+    margin: 4vh 0;
 }
 
 .word-text p {
